@@ -46,6 +46,71 @@
               <br>
             </div>
           <?php } ?>
+          
+Save New Duplicate & Edit Just Text 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+<?php if($paysafecard_enabled) { ?>
+            <a class="btn btn-success btn-block" data-toggle="collapse" href="#PaySafeCard" aria-expanded="false" aria-controls="PaySafeCard">PaySafeCard</a>
+            <br>
+            <div class="collapse" id="PaySafeCard">
+              <form class="form-inline" data-ajax="true" action="<?= $this->Html->url(array('controller' => 'payment', 'action' => 'paysafecard')) ?>">
+                <div class="ajax-msg"></div>
+                <div class="form-group" style="margin-right:20px;margin-top:-15px">
+                  <label class="sr-only"><?= $Lang->get('SHOP__GLOBAL_AMOUNT') ?></label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="amount" placeholder="XXX" maxlength="3" data-type="numbers" tabindex="1" style="width:60px;">
+                    <div class="input-group-addon">€</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="code1" placeholder="XXXX" tabindex="2" data-type="numbers" maxlength="4" style="width:60px;">
+                </div>
+                -
+                <div class="form-group">
+                  <input type="text" class="form-control" name="code2" placeholder="XXXX" tabindex="3" data-type="numbers" maxlength="4" style="width:60px;">
+                </div>
+                -
+                <div class="form-group">
+                  <input type="text" class="form-control" name="code3" placeholder="XXXX" tabindex="4" data-type="numbers" maxlength="4" style="width:60px;">
+                </div>
+                -
+                <div class="form-group">
+                  <input type="text" class="form-control" name="code4" placeholder="XXXX" maxlength="4" data-type="numbers" tabindex="5" style="width:60px;">
+                </div>
+                <button type="submit" class="btn btn-default pull-right"><?= $Lang->get('GLOBAL__SUBMIT') ?></button>
+              </form>
+            </div>
+          <?php } ?>
           <?= $Module->loadModules('shop_payments_modal') ?>
         <?php } else { ?>
           <p><?= $Lang->get('USER__ERROR_MUST_BE_LOGGED') ?></p>
