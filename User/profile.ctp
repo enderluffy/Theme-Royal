@@ -57,7 +57,7 @@
                                                        value="<?= $Lang->date($user['created']) ?>" disabled>
                                         </div>
                                     </div>
-                                    <?php if ($EyPlugin->isInstalled('eywek.shop.1')) { ?>
+                                    <?php if ($EyPlugin->isInstalled('eywek.shop')) { ?>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label><?= $Lang->get('USER__MONEY') ?></label>
@@ -131,7 +131,7 @@
                         </div>
                     <?php } ?>
 
-                    <?php if ($EyPlugin->isInstalled('eywek.shop.1')) { ?>
+                    <?php if ($EyPlugin->isInstalled('eywek.shop')) { ?>
                         <div class="well" style="background-color: #fff;">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><?= $Lang->get('SHOP__USER_POINTS_TRANSFER') ?></h3>
