@@ -42,12 +42,25 @@
                                                 <input type="text" class="form-control" value="<?= $rank ?>" disabled>
                                         </div>
                                     </div>
+
+
+
                                     <div class="col-sm-6">
-                                        <div class="form-group">
+                                        <div class="form-group"> Attention de pas montrer votre IP <br>
+                                          <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#IP">Votre IP</button>
+                                          <div id="IP" class="collapse">
+
+                                            
                                             <label><?= $Lang->get('IP') ?></label>
                                             <input type="text" class="form-control" value="<?= $user['ip'] ?>" disabled>
+                                            </div>
                                         </div>
                                     </div>
+
+
+
+
+
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
